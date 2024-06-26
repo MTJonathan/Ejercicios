@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 33px;
+    text-align: center;
+    padding: 18px;
+    margin-bottom: 0;
+}
+.container{
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px black;
+    padding: 15px 0 25px 0;
+}
+#botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+#itemPantalla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 26px 5px 26px;
+}
+#pantalla{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    width: 20%;
+    height: 40px;
+    background-color: #fff;
+}
+.container:hover{
+    scale: 1.1;
+}
+button:hover{
+    background-color: beige;
+    scale: 1.12;
+}
+@media(width >=1055px){
+    .container{
+        width: 25%;
+    }
+}
+@media (width <= 900px){
+    .container{
+        width: 40%;
+    }
+}
+@media(width <= 700px){
+    .container{
+        width: 50%;
+    }
+}
+@media(width <= 500px){
+    .container{
+        width: 60%;
+    }
+}
+@media(width <= 390px){
+    .container{
+        width: 80%;
+    }
+}
