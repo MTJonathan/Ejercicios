@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    height: 1000px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.itemCiudades{
+    width: 25%;
+    height: 100%;
+    background-color:coral;
+}
+.itemContenido{
+    width: 75%;
+    padding: 23px;
+}
+li{
+   
+    width: 100%;
+}
+a{
+    color: aliceblue;
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+    width: auto;
+}
+li:hover{
+    background-color: red;
+}
+a.active{
+    background-color: purple;
+}
+a:active:not(.active){
+    background-color: purple;
+}
+.imgMenu{
+    margin: 15px;
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.imgMenu2{
+    margin: 15px;
+    position: relative;
+    display: none;
+}
+#menuCheck{
+    display: none;
+}
+@media(width <= 700px){
+    .container{
+        position: relative;
+    }
+    .itemCiudades{ 
+        width: 45%;
+        display: none;
+    }
+    .itemContenido{
+        width: 100%;
+    }
+    .imgMenu{
+        display: inline;
+    }
+    #menuCheck:checked ~ .itemCiudades{
+        display: inline;
+        position: absolute;
+    }
+}
