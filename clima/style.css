@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffdead;
+}
+section{
+    text-align: center;
+    background-color: #feac7f;
+    width: 50%;
+    padding: 32px;
+    border-radius: 10px;
+    margin-top: 32px;
+}
+input{
+    width: 50%;
+    border-radius: 10px;
+    padding: 15px;
+}
+button{
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+h1{
+    color: #444444;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+section:hover{
+    scale: 1.2;
+    margin-top: 50px;
+}
+button:hover{
+    scale: 1.15;
+    background-color: #004C99;
+    color: aliceblue;
+    margin-left: 18px;
+}
+.datos{
+    color: #444444;
+    font-family: 'Poppis', sans-serif;
+}
+#ciudad{
+    font-weight: 800;
+}
+@media(width <= 640px){
+    section{
+        width: 80%;
+    }
+    section:hover{
+        scale: 1;
+        margin-top: 32px;
+    }
+    button:hover{
+        scale: 1;
+        margin-left: 10px;
+    }
+}
