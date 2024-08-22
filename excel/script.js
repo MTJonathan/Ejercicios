@@ -8,6 +8,10 @@ const FIRST_CHAR_CODE = 65;
 const range = (length) => Array.from({ length }, (_, i) => i);
 const getColumn = col => String.fromCharCode(FIRST_CHAR_CODE + col);
 
+let STATE = range(COLUMNS)
+  .map(col => range(ROWS).map(()=> ({computedValue: 0, value: ''})));
+
+ console.log(STATE); 
 const renderSpreadSheet = () => {
   const $table = $("table");
   const $head = $("thead");
